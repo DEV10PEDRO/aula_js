@@ -64,6 +64,8 @@ while(contador < 10){
     contador++
 }
 
+
+
 do {
     console.log(contador)
     contador++
@@ -87,7 +89,7 @@ do {
 
     setInterval (ola,5000)
 
-    const frutas = ["maçã", "banana", "morango"]
+    const frutas = ["maçã", "banana", "morango", "Manga"]
     console.log(frutas[0])
 
     for(let f = 0; f < frutas.length; f++){
@@ -102,5 +104,37 @@ do {
         console.log(f)
 
     })
+
+    frutas.push("Manga") //  ["maçã", "banana", "morango", "Manga"]
+
+    frutas.forEach(function(f){
+        console.log(f)
+    })
+
+    console.error("deu erro")
+
+    let x = 10
+    let y = "a" 
+    try {
+        if(y == 0){
+            throw RangeError("Valor zero não é permitido")
+        } else if (typeof(y) == "string" || TypeError(x) == "string"){
+            throw TypeError("Valor do tipo string não é permitido")
+        }
+        console.log(x/y)
+    } catch (error) {
+        console.error("Aconteceu um erro: " + error)
+        console.error(`O erro ${error} aconteceu`)
+    }
+
+
+
+    // Exercicio js
+
+    let nome = "pedro"
+    console.log (nome)
+
+
+
 
 
