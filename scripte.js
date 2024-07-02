@@ -129,11 +129,6 @@ do {
 
 
 
-    // Exercicio js
-
-    let nome = "pedro"
-    console.log (nome)
-
 
 
 
